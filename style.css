@@ -1,0 +1,61 @@
+
+#quiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Дві колонки однакової ширини */
+    gap: 10px; /* Проміжок між елементами */
+}
+
+.question {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.answer {
+    width: 30px;
+}
+
+.answer::-webkit-outer-spin-button,
+.answer::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.feedback {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedback i {
+    opacity: 0;
+    transition: opacity 0.5s ease-in; /* Smooth fade-in effect */
+}
+
+.feedback i.visible {
+    opacity: 1;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#result {
+    text-align: right;
+    margin-right: 25%;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 0px;
+    color: green;
+}
+
+button {
+    margin-right: 20px;
+    height: 40px;
+    cursor: pointer;
+}
