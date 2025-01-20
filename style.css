@@ -1,7 +1,7 @@
 
-#quiz {
+#quiz, #container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Дві колонки однакової ширини */
+    grid-template-columns: 1fr 1fr 1fr; /* Дві колонки однакової ширини */
     gap: 10px; /* Проміжок між елементами */
 }
 
@@ -45,17 +45,19 @@
 }
 
 #result {
-    text-align: right;
-    margin-right: 25%;
     font-size: 18px;
     font-style: italic;
     font-weight: 800;
-    margin-bottom: 0px;
     color: green;
+    align-self: end;
 }
 
 button {
     margin-right: 20px;
     height: 40px;
     cursor: pointer;
+}
+
+img {
+    width: 160px;
 }
