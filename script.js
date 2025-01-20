@@ -57,8 +57,15 @@ function generateEquations() {
         equations.push({ equation: `${a2} / X = ${b2}`, answer: x2 });
     }
 
+    for (let i = equations.length - 1; i > 0; i--) {
+        const randomIndex = Math.floor(Math.random() * (i + 1)); // Generate a random index
+        [equations[i], equations[randomIndex]] = [equations[randomIndex], equations[i]]; // Swap elements
+    }
     return equations;
+    
 }
+
+
 
 const quiz = generateEquations();
 console.log(quiz);
