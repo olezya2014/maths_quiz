@@ -61,3 +61,7 @@ button {
 img {
     width: 160px;
 }
+
+#image2 {
+    display: none;
+}

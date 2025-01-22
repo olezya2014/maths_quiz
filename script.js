@@ -145,6 +145,10 @@ function checkAnswers() {
     setTimeout(() => {
         const result = Math.round((correct / inputs.length) * 100);
         document.getElementById('result').textContent = `${result} %`;
+        if (result == 100) {
+            document.getElementById("image1").style.display = "none";
+            document.getElementById("image2").style.display = "block";
+        }
     }, inputs.length * 500); // Wait for all feedback delays to complete
 }
 
