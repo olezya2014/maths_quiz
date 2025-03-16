@@ -5,6 +5,33 @@
     gap: 10px; /* Проміжок між елементами */
 }
 
+nav {
+    margin-bottom: 20px;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #800080;
+    text-align: center;
+    padding: 10px;
+}
+
+#menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+  }
+
 .question {
     box-sizing: border-box;
     display: flex;
